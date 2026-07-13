@@ -1,0 +1,17 @@
+typer>=0.12
+rich>=13.7
+pyyaml>=6.0
+boto3>=1.34
+httpx>=0.27
+
+[all]
+cloudops-cli[azure,gcp]
+
+[azure]
+azure-identity>=1.16
+azure-mgmt-compute>=31.0
+azure-mgmt-network>=25.4
+
+[gcp]
+google-cloud-compute>=1.19
+google-cloud-resource-manager>=1.12

@@ -1,0 +1,3 @@
+[console_scripts]
+cloudops = cloudops.cli:main
+cloudops-gui = cloudops.gui:main

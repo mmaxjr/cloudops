@@ -1,0 +1,26 @@
+profiles:
+  aws-prod:
+    provider: aws
+    region: us-east-1
+    aws_profile: prod        # nome do profile em ~/.aws/credentials
+  aws-dev:
+    provider: aws
+    region: sa-east-1
+    aws_profile: dev
+  gcp-main:
+    provider: gcp
+    project_id: meu-projeto-gcp
+    credentials_file: /caminho/para/service-account.json
+  azure-main:
+    provider: azure
+    subscription_id: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+
+notifications:
+  slack_webhook_url: ""      # https://hooks.slack.com/services/...
+  email_to: ""
+
+tagging:
+  required_tags: [owner, environment, cost-center]
+
+defaults:
+  profile: aws-prod
